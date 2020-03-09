@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 
@@ -459,3 +460,402 @@ aside ul li{
     font-size: 2.8125em;
 }
 
+=======
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
+/* Global Styling*/
+
+*{
+    margin: 0;
+    padding: 0;  
+    font-size: 16px; 
+    
+
+}
+
+html, body{
+    height: 100%;
+    background-color: #F5EDED;
+}
+
+
+/*Header*/
+
+
+header{
+    
+    display: flex;
+    width: 98%;
+    height: 85px;
+    margin:auto;
+    align-items: center;
+    color: white;
+
+    
+}
+.logo,.nav-links{
+    display: flex;
+    
+
+}
+
+.logo{
+    display: flex;
+    flex:1;
+}
+.logo h1{
+    font-size: 2.8125em;
+}
+
+   
+
+.navigation{
+    
+    flex: 1.25;
+         
+  
+
+}
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+    text-transform: uppercase;
+    
+    
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.375em;
+}
+.nav-links a:hover{
+    color:  #FF3333;
+    width: 70px;
+    height: 40px;
+}
+
+.active li
+{
+    color: #FF3333;
+}
+
+/*Body styling*/
+#container{
+
+    min-height: 100%;
+    text-align: center;
+    
+}
+
+#topSection{
+
+    height: 150px;
+    
+    font-family: 'Poppins',sans-serif;
+    
+    
+}
+input{
+
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+
+
+/*Body*/
+
+
+#index-search-bar h2{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.5em;
+}
+#index-search-bar{
+    color: white;
+    font-size: 2.1875em;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+#index-search-bar input{
+    width: 90%;
+    height: 5vh;
+    border-radius: 20px;
+    
+}
+#index-search-bar button{
+    border-radius: 20px;
+    background-color: #FF3333;
+    color: white;
+    width: 30%;
+    height: 6vh;
+    border: none;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.55em;
+    margin-top: 15px;
+}
+
+.main{
+    width: 100%;
+    /*display: flex;*/
+    background-image: url(../images/backdrop.jpg);
+    background-position: center center;/*0px -400px;*/
+    height: 550px;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    
+}
+
+
+.cats-display{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    margin-top: -500px;
+    margin-bottom: 30px;
+   
+    
+    width: 90%;
+    height: 350px;
+    
+}
+.cats-display a{
+    align-content: center;
+    margin: auto;
+}
+.cats-display img {
+    
+    /*align-content: center;*/
+    margin: auto;
+    height: 350px;
+    border-bottom: 10px solid #FF3333;
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+}
+.cats-display img:hover{
+
+    transform: scale(1.10,1.10);
+}
+.cats-display img:not(:last-child){
+    
+    margin-right: 85px;
+    
+}
+section{
+    font-family: 'Poppins',sans-serif;
+    color: #262626;
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+   
+}
+section h1{
+    font-size: 2.5em;
+}
+section p{
+    
+    font-size: 1.125em;
+    margin-bottom: 80px;
+    padding: 5px;
+}
+
+/* DONATE PAGE STYLE */
+#container{
+    
+}
+.main-donate{
+    width: 100%;
+    /*display: flex;*/
+    background-image: url(../images/backdrop.jpg);
+    background-position: center center;/*0px -400px;*/
+    height: 300px;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    text-align: left;
+    
+}
+.main-donate h1{
+    font-size: 2em;
+}
+#heading{
+    width: 90%;
+    margin-left: 25px;
+}
+ 
+.donate-form{
+    margin-top: 400px;
+    border: 5px solid red;
+}
+
+#form {
+    position: relative;
+    width: 800px;
+    margin: 50px auto 100px auto;
+    margin-top: 50px;
+  }
+  
+  #form input {
+    font-family: 'Poppins',sans-serif;
+    font-size: 0.875em;
+    width: 800px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    
+    background: transparent;
+    outline: none;
+    color: #262626;
+    
+    border: solid 1px #262626;
+    border-bottom: none;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+  }
+  
+  #form input:hover {
+    background: #FF3333;
+    color:white;
+  }
+  #select{
+    font-family: 'Poppins',sans-serif;
+    font-size: 0.875em;
+    width: 832px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    
+    background: transparent;
+    outline: none;
+    color: #262626;
+    
+    border: solid 1px #262626;
+    border-bottom: none;
+    
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+
+  }
+  
+  #form textarea {
+    width: 800px;
+    max-width: 800px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    border: solid 1px #262626;
+    
+    background: transparent;
+    outline: none;
+    
+    color: #262626;
+    font-family: 'Poppins',sans-serif;
+    font-size: 0.875em;
+    
+    color: white;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+  }
+  
+  #form textarea:hover {
+    background: #FF3333;
+    color: white;
+  }
+  
+  #submit {
+    width: 832px;
+    
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+    
+    font-family: 'Poppins',sans-serif;
+    font-size: 0.875em;
+    color: #262626;
+    
+    outline:none;
+    cursor: pointer;
+    
+    border: solid 1px #262626;
+    
+  }
+  
+  #submit:hover {
+
+    color: white;
+    font-size: 1em;
+  }
+
+
+
+
+/*About us page style*/
+#about-us{
+    color: #262626;
+ 
+    border: 1px solid red;
+    min-height: 400px;
+    display:flex;
+    
+
+}
+
+/*Footer*/
+
+.footer{
+    display: flex;
+   flex-direction: column;
+    color: white;
+    font-size: 0.8125em;
+    background-color: #262626;
+    position: relative;
+   text-align: center;
+    
+    clear: both;
+}
+#bottom{
+    
+    flex:1;
+    order:2;
+    width: 100%;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 10px;
+    
+    
+}
+.social-media{
+    margin: 0px auto;
+}
+.social-media ul li{
+    
+    
+    flex:1;
+    display: inline-flex;
+    
+    
+}
+.social-media a{
+    font-size: 20px;
+    color: #FF3333; 
+   
+    margin-top: 10px;
+    padding: 0 70px 5px 70px;
+}
+.social-media i{
+    font-size: 2.8125em;
+}
+
+>>>>>>> 42669f5d77e09ec42415c05a8960cde4bda71be7
