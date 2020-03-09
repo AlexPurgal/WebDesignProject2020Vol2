@@ -67,12 +67,14 @@ header{
     font-size: 1.375em;
 }
 .nav-links a:hover{
-    border-bottom: 3px solid #FF3333;
+    color:  #FF3333;
+    width: 70px;
+    height: 40px;
 }
 
-.nav-links a:active{
+.active li
+{
     color: #FF3333;
-    
 }
 
 /*Body styling*/
@@ -159,12 +161,24 @@ input{
     height: 350px;
     
 }
+.cats-display a{
+    align-content: center;
+    margin: auto;
+}
 .cats-display img {
     
-    align-content: center;
+    /*align-content: center;*/
     margin: auto;
     height: 350px;
     border-bottom: 10px solid #FF3333;
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+}
+.cats-display img:hover{
+
+    transform: scale(1.10,1.10);
 }
 .cats-display img:not(:last-child){
     
@@ -324,8 +338,80 @@ section p{
 
 
 
+/*About us page style*/
+#about-us{
+    color: #262626;
+ 
+    border: 1px solid red;
+    min-height: 400px;
+    display:flex;
+    
 
+}
+.display{
+    display: grid;
+    grid-template-columns: 20% 55% 20%;
+    
+    background: #eee;
+    padding: 1em;
+}
+.display > div:nth-child(odd){
+    background: #ddd;
+}
+.grid-display{
+    text-align: left;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+.grid-display h1{
+    
+    font-size: 2em;
+}
+.grid-display p{
+    
+    font-size: 1.15em;
+}
+.grid-img{
+    background: url(./images/grid2.jpg);
+    background-position: center;
+    background: cover;
+    background-size: cover;
+}
+}
+.row-1{
+    grid-column: 2/3;
+}
+.row-3{
+    text-align: left;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    padding: 10px;
+ 
+}
 
+aside{
+    width: 60%;
+    margin-top: 2vh;
+    padding: 20px;
+    font-family: 'Poppins',sans-serif;
+    text-align: left;
+    font-size: 1.2em;
+    background: #FF3333;
+    height: 600px;
+    color: white;
+}
+aside h1{
+    font-size: 1.5em;
+}
+aside ul{
+    padding-left: 15px;
+}
+aside ul li{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2em;
+}
 /*Footer*/
 
 .footer{
@@ -336,6 +422,7 @@ section p{
     background-color: #262626;
     position: relative;
    text-align: center;
+   font-family: 'Poppins',sans-serif;
     
     clear: both;
 }
