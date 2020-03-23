@@ -1,0 +1,385 @@
+/*font import and global styles*/
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+}
+:root {
+    /*color virables for easy editing */
+    --text-color-light: #fff;
+    --text-color-dark: #262626;
+    --accent-color-red: #FF3333;
+    --bg-offwhite-color: #F5EDED;
+    --bg-dark-color: #262626;
+}
+body {
+    margin: 0 auto;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+/*clearfix for float issues*/
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: block;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* header styling ------------------------------------------ */
+header {
+    width: 100%;
+    border-bottom: solid 3px #FF3333;
+    display: block;
+    overflow: auto;
+}
+.branding {
+    float: left;
+    
+}
+.branding h1 {
+    font-size: 2rem;
+}
+nav {
+    float: right;
+    padding-top: 0.8rem
+}
+nav li {
+    display: inline;
+    margin-left: 3rem;
+
+}
+nav li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+}
+nav li a:active,
+nav li a:visited {
+    color: #000;
+}
+ul li a.active{
+    color: var(--accent-color-red);
+}
+/*page banners*/
+#donate-banner,
+#about-banner {
+    color: var(--text-color-light);
+    padding-top: 5rem; 
+}
+#donate-banner.banner,
+#about-banner.banner {
+    min-height: 320px;
+    height: 30vh;
+}
+#donate-banner h1,
+#about-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+#donate-banner h3
+#about-banner h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+/* main banner --------------------------------------------*/
+.banner {
+    background-image: url('../img/backdrop.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    min-height: 470px;
+    height: 50vh;
+}
+#main-banner h2 {
+    font-size: 3rem;
+    color: var(--text-color-light);
+    margin: 0;
+    text-align: center;
+    padding-top: 4rem;
+    margin-bottom: 0.9rem;   
+}
+/*search form*/
+#cat-search {
+    
+    text-align: center;
+    
+}
+#cat-search input {
+    width: 60%;
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+#cat-search button {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--accent-color-red);
+    border: none;
+    padding: 0.6rem 1.6rem;
+    border-radius: 2rem;
+    color: var(--text-color-light);
+}
+/*cat columns ---------------------------------------------------*/
+.cat-display-wrapper,
+.about-wrapper {
+    background-color: var(--bg-offwhite-color);
+    margin: 0 auto;
+}
+.cats-display a:not(:last-child)  {
+    margin-right: 1.6%;
+}
+.cats-display a img {
+    width: 32%;
+    border-bottom: 11px var(--accent-color-red) solid;
+    margin-top: -140px;
+    transition: ease-in-out .7s;
+}
+.cats-display a img:hover {
+    transform: scale(1.05,1.05);
+}
+.text-row {
+    padding: 2rem 0;
+}
+.text-row h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.text-row p {
+    color: var(--text-color-dark);
+    margin-bottom: 1rem;
+}
+/* DONATE PAGE */
+
+
+/*donate form*/
+.donate-form-wrapper {
+    background-color: var(--bg-offwhite-color);
+}
+#donate-form{
+    width: 67%;
+    float: left;
+    margin-right: 1%;
+    padding: 5em .5em;
+}
+#donate-form h2,
+#donate-page-aside h2 {
+    font-size: 2rem;
+}
+#donate-page-aside iframe {
+    margin-top: 1.1rem;
+}
+#donate-page-aside {
+    padding: 5em 0em;
+}
+
+input#name,
+input#email,
+textarea#message{
+    width: 100%;
+    padding: 0.5rem 0.25rem;
+}
+#donate-form input,#donate-form  textarea,#donate-form select, #donate-form button {
+    margin-top: 1rem;
+}
+#donate-form input#submit{
+    background-color: var(--accent-color-red);
+    color: var(--text-color-light);
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5rem;
+}
+.donate-form-wrapper aside {
+    width: 30%;
+    display: block;
+    float: right;
+}
+/* about page */
+.about-wrapper {
+    padding: 2em 0;
+}
+#anchor-nav {
+    float: left;
+    display: block;
+    width: 100%;
+}
+a.anchor-button {
+    padding: 1em 2em;
+    background-color: var(--accent-color-red);
+    color: var(--text-color-light);
+    display: inline-block;
+    margin-right: 2em;
+    border-radius: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+
+
+}
+.about-wrapper article {
+    margin-top: 1rem;
+}
+#ourstory article {
+    width: 65%;
+    float: left;
+}
+#ourstory aside {
+    width:  30%;
+    float: right;
+    padding-top: 1rem;
+}
+#ourstory aside h2{
+    font-size: 1.5em;
+    padding-top: 1rem;
+}
+#ourstory aside ul{
+    padding-left: 1.5rem;
+}
+
+#ourstory {
+    padding-bottom: 1rem;
+    
+}
+#ourstory img {
+    float: left;
+    margin-bottom:0.1rem;
+    width: 300px;
+    margin-right: 1.5rem;
+}
+
+article#how-we-help {
+    float: left;
+    width: 100%;
+}
+#how-we-help p{
+    column-count: 3;
+    column-gap: 1rem;
+    column-width: 33%;
+}
+article#about-gallery {
+    float: left;
+    width: 100%;
+}
+#about-gallery img {
+ 
+   width:33%;
+} 
+/*our cats*/
+#cat-video iframe {
+    width: 50%;
+    display: block;
+    float: left;
+}
+#cat-video aside {
+    width: 45%;
+    display: block;
+    float: left;
+    padding: 2rem;
+}
+#cat-video aside ul {
+    padding-left: 2rem;
+}
+#cat-list table {
+    width: 100%;
+}
+th.table-p {
+    text-align: left;
+}
+td.table-p {
+    padding: 0.5rem 1rem;
+    border: solid 1px var(--text-color-dark);
+}
+#cat-profile,
+#cat-list {
+    display: block;
+    float: left;
+    padding: 2.5rem 0rem;
+    width: 100%;
+}
+.table-p {
+    width: 20%;
+}
+.cat-card {
+    display: inline-block;
+    width: 32%;
+    margin: .5%;
+    float: left;
+    background-color: var(--accent-color-red);
+    color: var(--text-color-light);
+    padding-bottom: 2rem;
+}
+.cat-card img {
+    width: 100%;
+}
+.cat-card h1,
+.cat-card h2,
+.cat-card p {
+    padding: .1rem 2rem;
+}
+
+/*footer -------------------------------------------------------*/
+footer {
+    background-color: var(--bg-dark-color);
+    padding-top: 2rem;
+}
+footer nav {
+    text-align: left;
+    margin-bottom: 2rem;
+    width: 50%;
+    float: left;
+   
+}
+footer nav li {
+    margin-right: 2em;
+    margin-left: 0;
+}
+footer nav a,
+footer nav a:visited,
+footer nav a:active
+ {
+    color: var(--text-color-light);
+}
+footer .social-media {
+    width: 50%;
+    text-align: right;
+    float: right;
+}
+footer .social-media li{
+    display: inline-block;
+    margin: 0 2rem;
+}
+footer .social-media li a i {
+    font-size: 2rem;
+    color: var(--accent-color-red);
+}
+footer .address {
+    padding: 1.5rem 0;
+    width: 50%;
+    text-align: right;
+    display: block;
+    float: right;
+    width: 50%;
+    color: var(--text-color-light);
+}
+footer .copyrights {
+    padding: 1.5rem 0;
+    width: 50%;
+    text-align: left;
+    display: block;
+    float: left;
+    width: 50%;
+    color: var(--text-color-light);
+}

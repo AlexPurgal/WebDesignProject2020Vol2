@@ -5,99 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Cat adoption, animal rescue, homeless cats, kittens for adoption, home for cats">
     <meta name="author" content="Alex Purgal">
-    <title>CatFinder rescue centre</title>
-    <link rel="stylesheet" type= "text/css" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <title>CatFinder</title>
+    
+    <link rel="stylesheet" type= "text/css" href="styles/style.css">
     <script src="https://kit.fontawesome.com/7ffea88312.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
-    <div id="container">
-
-        <div class="main">
-
-            <div id="topSection">
-            <header>
-                <div class="logo">
-                       
-                        <h1>Catfinder</h1>
-
-                </div><!--logoNav ending-->
-                
-                <div class="navigation">
-                    <nav>
-                        <ul class="nav-links">
-                            <li><a href="index.html">Cats</a></li>
-                            <li><a href="about.html">Home</a></li>
-                            <li><a href="services.html">About</a></li>
-                            <li><a href="donate.html">Donate</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                    
-            <!--header end-->
-            </header>     
+    <header>
+        <section class="container clearfix">
+            <div class="branding">
+                <h1>CatFinder</h1>
             </div>
-        
-
-        <div id="index-search-bar">
-            <h2>Don't be sad, adopt a cat!</h2>    
-            <form action="search">
+            <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cats.html">Cats</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            <ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+    <section id="main-banner" class="banner">
+        <div class="container clearfix">
+            <h2>Don't be sad adopt the cat</h2>
+            <form id="cat-search" action="search">
                 <input id="indexsearch" type="text" placeholder="Enter your area...">
                 <button type="Search">Search for your friend</button>
             </form>
         </div>
-
-        
-
-        </div>
-    </div>
-   <div class="cats-display">
-        <a href="johnny.html"><img src="./images/cat1Smol.jpg" alt="cat1"></a>
-        <a href="morgana.html"><img src="./images/cat9smol.jpg" alt="cat9"></a>
-        <a href="pudding.html"><img src="./images/cat8smol.jpg" alt="cat3"></a>
-   </div>
-   <div class="cats-description">
-       <section>
-           <h1>We are looking for a loving permanent home!</h1>
-           <p>Meow! I'm Johnny (far left) and these are my friends: Morgana (middle) and Pudding (right).
-            I'm super cuddly and soft and I love attention. Morgana might seem a little serious and not fun in this picture but I guarantee she is energetic and playful. Pudding seems a little shy at first but he is great craic once he feel comfortable. 
-            We are all different characters just like people but we share one dream of having a loving family. Would you make it come true?
-            To find out more about us, just click in our pictures!
-
-
-
-
-           </p>
-       </section>
-   </div>
-    <footer class="footer">
-        <div id="bottom">
-            <p>Copyright &copy;2020 CatFinder<br>
-                330 Ferndale
-                Cartron
-                F91 K5V3
-                Sligo</p>
-                <p>+353 85 672 3441<br>
-                catfindersligo@gmail.com</p></div>
-            <div class="social-media">
-                <ul>
-                    <li><a href="#" target="blank"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="#" target="blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#" target="blank"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#" target="blank"><i class="fab fa-snapchat"></i></a></li>
-                    <!--<li><a href="#" target="blank"><i class="fab fa-facebook"></i></a></li>-->
-                
-                
-                </ul>
-                
-
+    </section>
+    <section class="cat-display-wrapper">
+             <div class="cats-display container clearfix">
+                <a href="johnny.html"><img src="./img/cat1Smol.jpg" alt="cat1"></a>
+                <a href="morgana.html"><img src="./img/cat9smol.jpg" alt="cat9"></a>
+                <a href="pudding.html"><img src="./img/cat8smol.jpg" alt="cat3"></a>
             </div>
-
-
-
-
+            <div class="text-row container clearfix">
+                <h1>We are looking for a loving permanent home!</h1>
+                <p>Meow! I'm Johnny (far left) and these are my friends: Morgana (middle) and Pudding (right).
+                I'm super cuddly and soft and I love attention. Morgana might seem a little serious and not fun in this picture but I guarantee she is energetic and playful. Pudding seems a little shy at first but he is great craic once he feel comfortable. 
+                We are all different characters just like people but we share one dream of having a loving family. Would you make it come true?
+                To find out more about us, just click in our pictures!</p>
+            </div>
+    </section>
+    </main>
+    <!--<aside></aside>-->
+       <footer>
+        <section class="container clearfix">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cats.html">Cats</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            <ul>
+        </nav>
+        <div class="social-media">
+            <ul>
+                        <li><a href="#" target="blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#" target="blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" target="blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" target="blank"><i class="fab fa-snapchat"></i></a></li>
+            </ul>
+        </div>
+        <p class="address">
+                330 Ferndale, Cartron, F91 K5V3, Sligo,<br>
+                tel: +353 85 672 3441,<br>
+                mail: catfindersligo@gmail.com
+        </p>
+        <p class="copyrights" >Copyright &copy;2020 CatFinder, All Rights Reseved</p>
+        </section>
     </footer>
 </body>
 </html>
