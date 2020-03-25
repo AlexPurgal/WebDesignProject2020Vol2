@@ -11,8 +11,9 @@
     --text-color-light: #fff;
     --text-color-dark: #262626;
     --accent-color-red: #FF3333;
-    --bg-offwhite-color: #F5EDED;
+    --bg-offwhite-color: #f5eded;
     --bg-dark-color: #262626;
+   
 }
 body {
     margin: 0 auto;
@@ -56,15 +57,21 @@ nav {
     float: right;
     padding-top: 0.8rem
 }
+nav ul{
+    
+}
 nav li {
     display: inline;
     margin-left: 3rem;
+    
 
 }
 nav li a {
     text-decoration: none;
     color: #000;
     font-size: 1.2rem;
+    display: inline-block;
+    
 }
 nav li a:active,
 nav li a:visited {
@@ -73,6 +80,7 @@ nav li a:visited {
 ul li a.active{
     color: var(--accent-color-red);
 }
+
 /*page banners*/
 #donate-banner,
 #about-banner {
@@ -169,12 +177,18 @@ ul li a.active{
 /*donate form*/
 .donate-form-wrapper {
     background-color: var(--bg-offwhite-color);
+    opacity: 1;
 }
 #donate-form{
     width: 67%;
     float: left;
     margin-right: 1%;
     padding: 5em .5em;
+}
+#name::placeholder,
+#email::placeholder{
+    color: rgb(250, 100, 100);
+    
 }
 #donate-form h2,
 #donate-page-aside h2 {
@@ -197,12 +211,22 @@ textarea#message{
     margin-top: 1rem;
 }
 #donate-form input#submit{
-    background-color: var(--accent-color-red);
-    color: var(--text-color-light);
+    background-color: none;
+    color: var(--text-color-dark);
     padding: 0.8rem 2rem;
-    border: none;
+    border: 1px solid var(--text-color-dark);
     border-radius: 5rem;
+    
+    transition: 0.2s linear;
 }
+#donate-form input#submit:hover{
+    transform: scale(1.1);
+    color: var(--text-color-light);
+    background-color: var(--accent-color-red);
+    border: none;
+}
+
+
 .donate-form-wrapper aside {
     width: 30%;
     display: block;
@@ -235,6 +259,7 @@ a.anchor-button {
 #ourstory article {
     width: 65%;
     float: left;
+    margin-bottom: 1rem;
 }
 #ourstory aside {
     width:  30%;
@@ -264,19 +289,32 @@ article#how-we-help {
     float: left;
     width: 100%;
 }
+article#how-we-help{
+    border-top: solid 1px var(--accent-color-red);
+    border-bottom: solid 1px var(--accent-color-red);
+    
+}
+#how-we-help h1{
+    margin-top: 1rem;
+}
 #how-we-help p{
     column-count: 3;
     column-gap: 1rem;
     column-width: 33%;
+    margin: 0.8rem 0rem 2rem 0rem;
 }
 article#about-gallery {
     float: left;
     width: 100%;
+   
 }
 #about-gallery img {
  
    width:33%;
 } 
+.bottom-line{
+    border: 1px solid var(--accent-color-red);
+}
 /*our cats*/
 #cat-video
 {
@@ -335,6 +373,10 @@ tr:nth-last-child(){
 tr{
     border: 1px solid gray;
 }
+tr:hover{
+    background-color: #d1cacae1;
+    
+}
 #cat-profile,
 #cat-list {
     display: block;
@@ -368,6 +410,49 @@ tr{
     padding: .1rem 2rem;
 }
 
+/*profiles pages */
+
+.profiles-wrapper{
+    padding: 2em 0;
+}
+.profiles-wrapper img{
+    width: 450px;
+    height: 450px;
+    border-bottom: 10px solid var(--accent-color-red);
+    float: left;
+    margin-right: 3.5rem;
+}
+.profiles-wrapper h2{
+    margin: 0.5rem 0.5rem 0rem 2rem;
+    padding-left: 1rem;
+}
+.profiles-wrapper a{
+    text-decoration: none;
+    color: var(--accent-color-red);
+    font-size: 0.7em;
+    margin-top: 1rem;
+}
+#profiles{
+    border-spacing: 0 1.5em;
+    width: 40%;
+}
+#profiles td{
+    margin-left: 2rem;
+    padding-left: 2rem;
+    font-size: 1.6em;
+    font-weight: 600;
+    text-align: left;
+}
+.cards{
+    background-color: var(--accent-color-red);
+    color: white;
+    width: 120px;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0.5rem;
+    
+}
+
 /*footer -------------------------------------------------------*/
 footer {
     background-color: var(--bg-dark-color);
@@ -389,6 +474,9 @@ footer nav a:visited,
 footer nav a:active
  {
     color: var(--text-color-light);
+}
+footer nav a:hover{
+    color: var(--accent-color-red);
 }
 footer .social-media {
     width: 50%;
