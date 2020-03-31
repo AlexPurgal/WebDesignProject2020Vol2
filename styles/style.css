@@ -311,6 +311,7 @@ article#about-gallery {
 #about-gallery img {
  
    width:33%;
+   max-height: 448px;
 } 
 .bottom-line{
     border: 1px solid var(--accent-color-red);
@@ -403,6 +404,7 @@ tr:hover{
 }
 .cat-card img {
     width: 100%;
+    max-height: 448px;
 }
 .cat-card h1,
 .cat-card h2,
