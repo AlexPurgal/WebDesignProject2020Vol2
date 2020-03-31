@@ -50,9 +50,14 @@ header {
     float: left;
     
 }
-.branding h1 a{
+.branding h1{
+    font-size: 2rem;
+    
+}
+.branding a{
     font-size: 2rem;
     text-decoration: none;
+    color:black;
 }
 nav {
     float: right;
