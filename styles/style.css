@@ -13,7 +13,6 @@
     --accent-color-red: #FF3333;
     --bg-offwhite-color: #f5eded;
     --bg-dark-color: #262626;
-   
 }
 body {
     margin: 0 auto;
@@ -48,30 +47,30 @@ header {
 }
 .branding {
     float: left;
-    
 }
 .branding h1 {
     font-size: 2rem;
+    color: black;
+}
+.branding h1 a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
 }
 nav {
     float: right;
     padding-top: 0.8rem
 }
-nav ul{
-    
-}
+
 nav li {
     display: inline;
     margin-left: 3rem;
-    
-
 }
 nav li a {
     text-decoration: none;
     color: #000;
     font-size: 1.2rem;
     display: inline-block;
-    
 }
 nav li a:active,
 nav li a:visited {
@@ -122,9 +121,7 @@ ul li a.active{
 }
 /*search form*/
 #cat-search {
-    
     text-align: center;
-    
 }
 #cat-search input {
     width: 60%;
@@ -172,8 +169,6 @@ ul li a.active{
     margin-bottom: 1rem;
 }
 /* DONATE PAGE */
-
-
 /*donate form*/
 .donate-form-wrapper {
     background-color: var(--bg-offwhite-color);
@@ -188,7 +183,6 @@ ul li a.active{
 #name::placeholder,
 #email::placeholder{
     color: rgb(250, 100, 100);
-    
 }
 #donate-form h2,
 #donate-page-aside h2 {
@@ -200,7 +194,6 @@ ul li a.active{
 #donate-page-aside {
     padding: 5em 0em;
 }
-
 input#name,
 input#email,
 textarea#message{
@@ -211,7 +204,7 @@ textarea#message{
     margin-top: 1rem;
 }
 #donate-form input#submit{
-    background-color: none;
+    background-color: transparent;
     color: var(--text-color-dark);
     padding: 0.8rem 2rem;
     border: 1px solid var(--text-color-dark);
@@ -225,12 +218,15 @@ textarea#message{
     background-color: var(--accent-color-red);
     border: none;
 }
-
-
 .donate-form-wrapper aside {
     width: 30%;
     display: block;
     float: right;
+}
+#map{
+    width: 100%;
+    height: 250px;
+    border: none;
 }
 /* about page */
 .about-wrapper {
@@ -250,8 +246,6 @@ a.anchor-button {
     border-radius: 2em;
     margin-bottom: 2em;
     text-align: center;
-
-
 }
 .about-wrapper article {
     margin-top: 1rem;
@@ -275,8 +269,7 @@ a.anchor-button {
 }
 
 #ourstory {
-    padding-bottom: 1rem;
-    
+    padding-bottom: 1rem;    
 }
 #ourstory img {
     float: left;
@@ -284,15 +277,13 @@ a.anchor-button {
     width: 300px;
     margin-right: 1.5rem;
 }
-
 article#how-we-help {
     float: left;
     width: 100%;
 }
 article#how-we-help{
     border-top: solid 1px var(--accent-color-red);
-    border-bottom: solid 1px var(--accent-color-red);
-    
+    border-bottom: solid 1px var(--accent-color-red);    
 }
 #how-we-help h1{
     margin-top: 1rem;
@@ -305,26 +296,25 @@ article#how-we-help{
 }
 article#about-gallery {
     float: left;
-    width: 100%;
-   
+    width: 100%;   
 }
-#about-gallery img {
- 
+#about-gallery img { 
    width:33%;
+   max-height: 448px;
 } 
 .bottom-line{
     border: 1px solid var(--accent-color-red);
 }
 /*our cats*/
-#cat-video
-{
-
+#cat-video{
     border-bottom: solid 1px var(--accent-color-red);
 }
 #cat-video iframe {
-    width: 60%;
-    display: block;
-    
+     
+    height: 315px; 
+    width: 58%;
+    display: block; 
+    border: none;       
 }
 #cat-video p{
     margin-bottom: 2.5em;
@@ -336,15 +326,11 @@ article#about-gallery {
 #cat-list h1{
     margin-bottom: 0.5rem;
 }
-
 #cat-list table {
-    width: 100%;
-    
+    width: 100%;    
 }
-.statistics{
-   
-    border-spacing: 0px;
-    
+.statistics{   
+    border-spacing: 0px;   
     
 }
 th{
@@ -353,19 +339,16 @@ th{
     padding: 0.5em;
     padding-left: 1.5em;
     font-weight: normal;
-    text-align: left;
-    
+    text-align: left;    
 }
 th.table-p {
-    text-align: left;
-        
+    text-align: left;        
 }
 td.table-p {
    padding: 0.85em;
    padding-left: 1.5em;
    margin-left: 1em;
-   border: none;
-    
+   border: none;    
 }
 tr:nth-last-child(){
     padding-bottom: 3em;
@@ -374,8 +357,7 @@ tr{
     border: 1px solid gray;
 }
 tr:hover{
-    background-color: #d1cacae1;
-    
+    background-color: #d1cacae1;    
 }
 #cat-profile,
 #cat-list {
@@ -387,8 +369,7 @@ tr:hover{
 .table-p {
     width: 20%;
 }
-.cat-card {
-    display: inline-block;
+.cat-card {    
     width: 32%;
     margin: 0;
     float: left;
@@ -403,15 +384,14 @@ tr:hover{
 }
 .cat-card img {
     width: 100%;
+    max-height: 448px;
 }
 .cat-card h1,
 .cat-card h2,
 .cat-card p {
     padding: .1rem 2rem;
 }
-
 /*profiles pages */
-
 .profiles-wrapper{
     padding: 2em 0;
 }
@@ -449,8 +429,7 @@ tr:hover{
     width: 120px;
     text-align: center;
     font-size: 1.2em;
-    padding: 0.5rem;
-    
+    padding: 0.5rem;    
 }
 
 /*footer -------------------------------------------------------*/
@@ -462,8 +441,7 @@ footer nav {
     text-align: left;
     margin-bottom: 2rem;
     width: 50%;
-    float: left;
-   
+    float: left;   
 }
 footer nav li {
     margin-right: 2em;
@@ -472,7 +450,7 @@ footer nav li {
 footer nav a,
 footer nav a:visited,
 footer nav a:active
- {
+{
     color: var(--text-color-light);
 }
 footer nav a:hover{
